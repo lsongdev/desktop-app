@@ -1,0 +1,7 @@
+
+.DS_Store
+app.*
+yarn.lock
+package-lock.json
+
+node_modules/

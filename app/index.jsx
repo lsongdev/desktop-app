@@ -1,11 +1,13 @@
 import React from 'react';
+import { Window, TitleBar, Text } from './components';
 
 class Index extends React.Component {
-  render(){
+  render() {
     return (
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <Window>
+        <TitleBar title="untitled text 5" controls />
+        <Text>Hello World</Text>
+      </Window>
     );
   }
 }

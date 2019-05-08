@@ -13,7 +13,15 @@ let mainWindow
 // Module to control application life.
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 400, height: 200})
+  mainWindow = new BrowserWindow({
+    width: 400, 
+    height: 200,
+    frame: false,
+    webPreferences: {
+      webSecurity: false,
+      nodeIntegration: true,
+    }
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({

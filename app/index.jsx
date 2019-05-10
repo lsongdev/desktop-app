@@ -5,7 +5,7 @@ class Index extends React.Component {
   render() {
     return (
       <Window>
-        <TitleBar title="untitled text 5" controls />
+        <TitleBar title="hello" controls ></TitleBar>
         <Text>Hello World</Text>
       </Window>
     );

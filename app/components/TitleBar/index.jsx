@@ -4,7 +4,7 @@ import './index.css';
 
 class TitleBar extends React.Component {
   render(){
-    const { title } = this.props;
+    const { title, children } = this.props;
     return (
       <header className="title-bar" style={ { WebkitAppRegion: "drag" } } >
         <div className="title-bar-controls" >
@@ -13,6 +13,7 @@ class TitleBar extends React.Component {
           <span className="button button-maximize" ></span>
         </div>
         <span className="title-bar-title" >{ title }</span>
+        <div>{ children }</div>
       </header>
     );
   }

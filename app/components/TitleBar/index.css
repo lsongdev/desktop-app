@@ -7,33 +7,39 @@
   align-items: center;
 
   &-title{
+    color: #333;
     width: 100%;
     text-align: center;
     user-select: none;
+    margin-left: -40px;
+    font-size: 14px;
+    font-family: sans-serif;
   }
 
   &-controls{
     display: flex;
     margin-left: 10px;
     align-items: center;
-  }
-}
 
-.button{
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  display: inline-block;
+    &-button{
+      width: 8px;
+      height: 8px;
+      margin-right: 3px;
+      display: inline-block;
+      border-radius: 4px;
 
-  &-maximize{
-    background-color: green;
-  }
+      &-maximize{
+        background-color: green;
+      }
 
-  &-minimize{
-    background-color: orange;
-  }
+      &-minimize{
+        background-color: orange;
+      }
 
-  &-close{
-    background-color:red;
+      &-close{
+        background-color:red;
+      }
+    }
+
   }
 }

@@ -12,14 +12,17 @@ let mainWindow
 
 // Module to control application life.
 function createWindow () {
+  const preload = ``;
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 400, 
-    height: 200,
+    width: 800, 
+    height: 600,
     frame: false,
     webPreferences: {
-      webSecurity: false,
-      nodeIntegration: true,
+      preload,
+      webSecurity: true,
+      nodeIntegration: false,
+      contextIsolation: false,
     }
   });
 

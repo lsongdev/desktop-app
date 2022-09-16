@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @kelpjs/build
+
+PATH: 
+  /Users/Lsong/Library/pnpm:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:/Library/Apple/usr/bin:/Users/Lsong/Library/pnpm:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/Lsong/Library/Caches/Yarn/v6/npm-postcss-nesting-7.0.1-b50ad7b7f0173e5b5e3880c3501344703e04c052-integrity/node_modules/postcss-nesting/README.md' -> '/Users/Lsong/Projects/electron-app/node_modules/postcss-preset-env/node_modules/postcss-nesting/README.md'
+
+npm manifest: 
+  {
+    "name": "electron-app",
+    "version": "0.0.1",
+    "description": "Electron application",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "keywords": [
+      "Electron",
+      "quick",
+      "start",
+      "tutorial",
+      "demo"
+    ],
+    "author": "lsong",
+    "license": "MIT",
+    "devDependencies": {
+      "electron": "latest",
+      "electron-rebuild": "latest",
+      "react": "*",
+      "react-dom": "*"
+    },
+    "dependencies": {
+      
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/song940/electron-app.git"
+    },
+    "bugs": {
+      "url": "https://github.com/song940/electron-app/issues"
+    },
+    "homepage": "https://github.com/song940/electron-app#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

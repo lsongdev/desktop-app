@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "rollup -c -w"
+    "build": "kbuild",
+    "dev": "kbuild --watch"
   },
   "keywords": [
     "Electron",
@@ -17,26 +18,13 @@
   "author": "lsong",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/preset-env": "latest",
-    "@babel/preset-react": "^7.0.0",
     "electron": "latest",
     "electron-rebuild": "latest",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "rollup": "latest",
-    "rollup-plugin-babel": "latest",
-    "rollup-plugin-commonjs": "latest",
-    "rollup-plugin-node-resolve": "latest",
-    "cssnano": "^4.1.10",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-nested": "^4.1.2",
-    "postcss-simple-vars": "^5.0.2",
-    "rollup-plugin-postcss": "^2.0.3"
+    "react": "18",
+    "react-dom": "18"
   },
   "dependencies": {
-    
+    "@kelpjs/build": "^0.0.18"
   },
   "repository": {
     "type": "git",

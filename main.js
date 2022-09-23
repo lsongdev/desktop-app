@@ -17,7 +17,8 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800, 
     height: 600,
-    frame: false,
+    frame: true,
+    titleBarStyle: 'hidden',
     webPreferences: {
       preload,
       webSecurity: true,
@@ -27,11 +28,7 @@ function createWindow () {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
+  mainWindow.loadURL(`https://lsong.org/react-app-with-router`)
 
   if(NODE_ENV === 'development'){
     // Open the DevTools.

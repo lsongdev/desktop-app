@@ -19,6 +19,8 @@ function createWindow () {
     height: 600,
     frame: true,
     titleBarStyle: 'hidden',
+    trafficLightPosition: { x: 10, y: 15 },
+    transparent: true,
     webPreferences: {
       preload,
       webSecurity: true,
@@ -26,6 +28,8 @@ function createWindow () {
       contextIsolation: false,
     }
   });
+
+  // mainWindow.setProgressBar(80)
 
   // and load the index.html of the app.
   mainWindow.loadURL(`https://lsong.org/react-app-with-router`)

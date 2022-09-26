@@ -19,12 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "latest",
-    "electron-rebuild": "latest",
-    "react": "18",
-    "react-dom": "18"
-  },
-  "dependencies": {
-    "@kelpjs/build": "^0.0.18"
+    "@kelpjs/build": "latest"
   },
   "repository": {
     "type": "git",

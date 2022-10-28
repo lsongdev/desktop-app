@@ -13,7 +13,7 @@ function createWindow () {
   const preload = ``;
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800, 
+    width: 1000, 
     height: 600,
     frame: true,
     titleBarStyle: 'hidden',
@@ -30,7 +30,7 @@ function createWindow () {
   // mainWindow.setProgressBar(80)
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`https://lsong.org/react-app-with-router`)
+  mainWindow.loadURL(`https://console.lsong.org`)
 
   if(NODE_ENV === 'development'){
     // Open the DevTools.
